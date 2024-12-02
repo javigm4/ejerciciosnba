@@ -1,44 +1,36 @@
 export class Nba {
   team;
   source;
-  player;
-  limit;
+  url;
 
-  constructor(team, source, player, limit) {
-    this.team = team;
+  constructor(title, source, url) {
+    this.title = title;
     this.source = source;
-    this.player = player;
-    this.limit = limit;
+    this.url = url;
   }
 
   //---getters
-  getTeam() {
-    return this.team;
+  getTitle() {
+    return this.title;
   }
 
   getSource() {
     return this.source;
   }
 
-  getPlayer() {
-    return this.player;
+  getUrl() {
+    return this.url;
   }
 
-  getLimit() {
-    return this.limit;
-  }
   //---setters
 
-  setTeam(newTeam) {
-    this.team = newTeam;
+  setTitle(newTitle) {
+    this.title = newTitle;
+  }
+  setUrl(newUrl) {
+    this.url = newUrl;
   }
   setSource(newSource) {
     this.source = newSource;
-  }
-  setPlayer(newPlayer) {
-    this.player = newPlayer;
-  }
-  setLimit(newLimit) {
-    this.limit = newLimit;
   }
 }
